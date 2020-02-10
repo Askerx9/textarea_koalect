@@ -1,24 +1,17 @@
-# textarea
+# textarea — Koalect
 
+I use Vue-cli
 ## Project setup
 ```
 npm install
 ```
+## docs
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+DATA:
+ - value: text I type in the textearea
+ - charMax: maxlength for textarea and to calculator how many characters left
 
-### Compiles and minifies for production
-```
-npm run build
-```
+COMPUTED:
+ - charLeft: calcul to display how many characters left with maxlength - value.length
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+COLOR: I check if charLeft is 0 (false) if this condition is true then I apply class "text--alert"
